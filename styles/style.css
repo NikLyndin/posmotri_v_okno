@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-  max-height: 534px;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
@@ -53,6 +52,7 @@ ol {
   justify-content: space-between;
   align-items: end;
   gap: 30px;
+  max-height: 534px;
   margin: 133px 30px;
 }
 
