@@ -183,10 +183,12 @@ input[type="text"] {
   color: #fff;
   font-family: inherit;
   font-size: inherit;
+  font-weight: bold; /*добавил толщину шрифта, больше не могу найти никаких расхождений*/
   line-height: 21.6px;
   background-color: transparent;
   cursor: pointer;
 }
+
 
 .button:hover {
   text-decoration: underline;
@@ -194,6 +196,7 @@ input[type="text"] {
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .button:focus {
@@ -234,14 +237,9 @@ input[type="text"] {
   max-height: 298px;
   margin-right: 5px;
   overflow-x: auto;
-  overflow-x: hidden;
   color: #fff;
 }
 
-.content__list li:first-child {
-  background-color: #545050;
-}  /*макет немного не соответсвует тому, что мы делаем, так что надеюсь я правильно понял замечание */
- 
 .content__list li:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -249,7 +247,7 @@ input[type="text"] {
 .content__video-card {
   display: flex;
   justify-content: space-between;
-  width: 394px;
+  width: 392px;
   height: 107px;
   color: #fff;
 }
@@ -260,6 +258,15 @@ input[type="text"] {
   line-height: 30px;
   text-decoration: none;
 }
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link + .content__card-link_current:checked {
+  background-color: #545050;
+}
+
 
 .content__card-link:hover {
   text-decoration: underline;
@@ -294,7 +301,7 @@ input[type="text"] {
 }
 
 .content__video-card-thumbnail  {
-  width: 194px;
+  width: 192px;
   object-fit: cover;
   object-position: center;
 }
